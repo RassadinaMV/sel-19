@@ -2,7 +2,6 @@ package ru.broker;
 
 import org.junit.After;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -10,11 +9,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.concurrent.TimeUnit;
-
+import static java.lang.Thread.sleep;
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
-public class FirstTest {
+public class ThirdTest {
     private WebDriver driver;
     private WebDriverWait wait;
 
@@ -23,17 +21,18 @@ public class FirstTest {
         System.setProperty("webdriver.chrome.driver","C:/Tools/chromedriver.exe");
         driver=new ChromeDriver();
         wait=new WebDriverWait(driver,10);
+
     }
 
     @Test
-    public void serchGoogle() {
+    public void loginLitecardAdmin() {
 
-        driver.get("https://www.google.com/");
+        driver.get("http://localhost/litecart/admin/");
         //driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
-        driver.findElement(By.name("q")).sendKeys("webdriver");
-        driver.findElement(By.name("q")).sendKeys(Keys.ESCAPE);
-        driver.findElement(By.name("btnK")).click();
-        wait.until(titleIs("webdriver - Поиск в Google"));
+         driver.findElement(By.name("username")).sendKeys("admin");
+         driver.findElement(By.name("password")).sendKeys("admin");
+         driver.findElement(By.name("login")).click();
+         driver.findElement(By.xpath("//*[contains(text(),'Statistics')]"));
 
     }
 
@@ -41,6 +40,7 @@ public class FirstTest {
     public void stop() {
 
         driver.quit();
-        driver=null;
+        driver = null;
+
     }
 }
