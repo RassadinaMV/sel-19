@@ -14,28 +14,17 @@ import java.util.concurrent.TimeUnit;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
-public class FirstTest {
-    private WebDriver driver;
-    private WebDriverWait wait;
+public class BaseTest {
+    public static WebDriver driver;
+    public static WebDriverWait wait;
 
     @Before
     public void setup() {
-        System.setProperty("webdriver.chrome.driver","C:/Tools/chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver","C:/Tools/chromedriver.exe");
         driver=new ChromeDriver();
         wait=new WebDriverWait(driver,10);
     }
 
-    @Test
-    public void serchGoogle() {
-
-        driver.get("https://www.google.com/");
-        //driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
-        driver.findElement(By.name("q")).sendKeys("webdriver");
-        driver.findElement(By.name("q")).sendKeys(Keys.ESCAPE);
-        driver.findElement(By.name("btnK")).click();
-        wait.until(titleIs("webdriver - Поиск в Google"));
-
-    }
 
     @After
     public void stop() {
