@@ -24,6 +24,7 @@ public class SeventhTestFailed extends BaseTest {
             System.out.println(i);
             elmts.get(i).click();
             wait.until(ExpectedConditions.elementToBeClickable(elmts.get(i)));
+            driver.findElement(By.tagName("h1"));
             List<WebElement> elmts2= driver.findElements(By.cssSelector(".docs a"));
             int gg=elmts2.size();
             if (gg>0)
@@ -32,6 +33,7 @@ public class SeventhTestFailed extends BaseTest {
                 {
                     elmts2.get(j).click();
                     wait.until(ExpectedConditions.elementToBeClickable(elmts2.get(j)));
+                    driver.findElement(By.tagName("h1"));
                     if (j>0) {driver.navigate().back();}
                 }
             }
