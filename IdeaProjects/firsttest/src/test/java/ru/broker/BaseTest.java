@@ -25,6 +25,14 @@ public class BaseTest {
         wait=new WebDriverWait(driver,10);
     }
 
+    public static void loginToAdm() {
+        driver.get("http://localhost/litecart/admin/");
+        //driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
+        driver.findElement(By.name("username")).sendKeys("admin");
+        driver.findElement(By.name("password")).sendKeys("admin");
+        driver.findElement(By.name("login")).click();
+    }
+
 
     @After
     public void stop() {
