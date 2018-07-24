@@ -16,8 +16,8 @@
       <file leaf-file-name="BaseTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+            <state relative-caret-position="259">
+              <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -28,8 +28,20 @@
       <file leaf-file-name="EighthTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/EighthTest.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106">
+              <caret line="31" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EleventhTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/EleventhTest.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="259">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+              <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,8 +64,8 @@
       <file leaf-file-name="NinthTest1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/NinthTest1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TenthTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TenthTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/TenthTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="88" column="19" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
+            <state relative-caret-position="140">
+              <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,20 +88,8 @@
       <file leaf-file-name="NinthTest2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/NinthTest2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="38" column="37" lean-forward="true" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="83" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SeventhTestV2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/SeventhTestV2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="156">
+              <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,10 +119,13 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/broker/SeventhTestV2.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/broker/EighthTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/broker/ThirdTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/broker/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/broker/NinthTest2.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/broker/NinthTest1.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/broker/TenthTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/EleventhTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/broker/BaseTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/broker/RandomString.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/broker/EleventhTest.java" />
       </list>
     </option>
   </component>
@@ -133,11 +136,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -210,7 +213,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TenthTest">
+  <component name="RunManager" selected="JUnit.EleventhTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -226,6 +229,29 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="ru.broker" />
       <option name="MAIN_CLASS_NAME" value="ru.broker.EighthTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="EleventhTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="firsttest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.broker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ru.broker" />
+      <option name="MAIN_CLASS_NAME" value="ru.broker.EleventhTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -272,29 +298,6 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="ru.broker" />
       <option name="MAIN_CLASS_NAME" value="ru.broker.NinthTest2" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="SeventhTestV2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="firsttest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.broker.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ru.broker" />
-      <option name="MAIN_CLASS_NAME" value="ru.broker.SeventhTestV2" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -368,19 +371,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.SeventhTestV2" />
       <item itemvalue="JUnit.EighthTest" />
       <item itemvalue="JUnit.NinthTest1" />
       <item itemvalue="JUnit.NinthTest2" />
       <item itemvalue="JUnit.TenthTest" />
+      <item itemvalue="JUnit.EleventhTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EleventhTest" />
         <item itemvalue="JUnit.TenthTest" />
         <item itemvalue="JUnit.NinthTest1" />
         <item itemvalue="JUnit.NinthTest2" />
         <item itemvalue="JUnit.EighthTest" />
-        <item itemvalue="JUnit.SeventhTestV2" />
       </list>
     </recent_temporary>
   </component>
@@ -398,39 +401,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TenthTest - 2018.07.24 at 01h 20m 22s.xml">
-      <configuration name="TenthTest" configurationId="JUnit" />
+    <history-entry file="EleventhTest - 2018.07.24 at 06h 01m 47s.xml">
+      <configuration name="EleventhTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TenthTest - 2018.07.24 at 01h 22m 56s.xml">
-      <configuration name="TenthTest" configurationId="JUnit" />
+    <history-entry file="EleventhTest - 2018.07.24 at 06h 32m 29s.xml">
+      <configuration name="EleventhTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TenthTest - 2018.07.24 at 01h 26m 45s.xml">
-      <configuration name="TenthTest" configurationId="JUnit" />
+    <history-entry file="EleventhTest - 2018.07.24 at 07h 13m 35s.xml">
+      <configuration name="EleventhTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TenthTest - 2018.07.24 at 01h 41m 42s.xml">
-      <configuration name="TenthTest" configurationId="JUnit" />
+    <history-entry file="EleventhTest - 2018.07.24 at 07h 19m 14s.xml">
+      <configuration name="EleventhTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TenthTest - 2018.07.24 at 01h 47m 25s.xml">
-      <configuration name="TenthTest" configurationId="JUnit" />
+    <history-entry file="EleventhTest - 2018.07.24 at 07h 26m 53s.xml">
+      <configuration name="EleventhTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TenthTest - 2018.07.24 at 01h 52m 46s.xml">
-      <configuration name="TenthTest" configurationId="JUnit" />
+    <history-entry file="EleventhTest - 2018.07.24 at 07h 36m 42s.xml">
+      <configuration name="EleventhTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TenthTest - 2018.07.24 at 01h 58m 26s.xml">
-      <configuration name="TenthTest" configurationId="JUnit" />
+    <history-entry file="EleventhTest - 2018.07.24 at 07h 55m 08s.xml">
+      <configuration name="EleventhTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TenthTest - 2018.07.24 at 02h 26m 24s.xml">
-      <configuration name="TenthTest" configurationId="JUnit" />
+    <history-entry file="EleventhTest - 2018.07.24 at 08h 03m 11s.xml">
+      <configuration name="EleventhTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TenthTest - 2018.07.24 at 02h 35m 54s.xml">
-      <configuration name="TenthTest" configurationId="JUnit" />
+    <history-entry file="EleventhTest - 2018.07.24 at 08h 05m 49s.xml">
+      <configuration name="EleventhTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TenthTest - 2018.07.24 at 02h 41m 24s.xml">
-      <configuration name="TenthTest" configurationId="JUnit" />
+    <history-entry file="EleventhTest - 2018.07.24 at 08h 12m 40s.xml">
+      <configuration name="EleventhTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -736,16 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/SeventhTestV2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -756,12 +749,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/NinthTest1.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/NinthTest2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="156">
+          <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/NinthTest1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/EleventhTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" lean-forward="true" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/RandomString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1211#1212#0" expanded="true" />
+            <element signature="e#1259#1260#0" expanded="true" />
+            <element signature="e#1377#1378#0" expanded="true" />
+            <element signature="e#1427#1428#0" expanded="true" />
+            <element signature="e#1507#1508#0" expanded="true" />
+            <element signature="e#1533#1534#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -776,30 +815,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/EighthTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/NinthTest2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="38" column="37" lean-forward="true" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/TenthTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="88" column="19" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
+        <state relative-caret-position="140">
+          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/EighthTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="31" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/EleventhTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
