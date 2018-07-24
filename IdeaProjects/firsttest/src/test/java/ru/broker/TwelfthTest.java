@@ -70,10 +70,10 @@ public class TwelfthTest extends BaseTest {
         for (int i = 1; i <= row; i++) {
             WebElement removeButton = driver.findElement(cssSelector("[name='remove_cart_item']"));
             removeButton.click();
-            wait.until(stalenessOf(removeButton));
+            //wait.until(stalenessOf(removeButton));
         }
         try {
-            Thread.sleep(20000);
+            Thread.sleep(40000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

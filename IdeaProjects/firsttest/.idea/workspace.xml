@@ -49,11 +49,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TwelfthTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TwelfthTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/TwelfthTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+            <state relative-caret-position="360">
+              <caret line="79" lean-forward="true" selection-start-line="74" selection-start-column="8" selection-end-line="79" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThirteenthTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/ThirteenthTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="62" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TwelfthTestRight.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/TwelfthTestRight.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,18 +90,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="33" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NinthTest2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/NinthTest2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,6 +127,8 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/broker/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/broker/TenthTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/broker/TwelfthTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/broker/ThirteenthTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/broker/TwelfthTestRight.java" />
       </list>
     </option>
   </component>
@@ -390,15 +404,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TwelfthTest - 2018.07.24 at 10h 15m 41s.xml">
-      <configuration name="TwelfthTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TwelfthTest - 2018.07.24 at 10h 41m 12s.xml">
-      <configuration name="TwelfthTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TwelfthTest - 2018.07.24 at 10h 47m 07s.xml">
-      <configuration name="TwelfthTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TwelfthTest - 2018.07.24 at 10h 56m 01s.xml">
       <configuration name="TwelfthTest" configurationId="JUnit" />
     </history-entry>
@@ -420,9 +425,18 @@
     <history-entry file="TwelfthTest - 2018.07.24 at 11h 42m 28s.xml">
       <configuration name="TwelfthTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TwelfthTest - 2018.07.24 at 11h 49m 04s.xml">
+      <configuration name="TwelfthTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TwelfthTest - 2018.07.24 at 11h 57m 37s.xml">
+      <configuration name="TwelfthTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TwelfthTest - 2018.07.24 at 12h 07m 31s.xml">
+      <configuration name="TwelfthTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -434,11 +448,11 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45786965" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45786965" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24597365" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24597365" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -457,10 +471,10 @@
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45786965" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.45786965" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24597365" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24597365" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -843,8 +857,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/TwelfthTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+        <state relative-caret-position="360">
+          <caret line="79" lean-forward="true" selection-start-line="74" selection-start-column="8" selection-end-line="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/ThirteenthTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="62" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/broker/TwelfthTestRight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
