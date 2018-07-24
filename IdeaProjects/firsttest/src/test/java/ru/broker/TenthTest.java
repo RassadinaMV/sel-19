@@ -32,6 +32,7 @@ public class TenthTest extends BaseTest {
 
         driver.findElement(By.xpath("//div[contains(@id,'box-campaigns')]//a")).click();
 
+
         w1 = driver.findElement(By.xpath("//div[contains(@id,'box-product')]//h1[contains(@itemprop,'name')]"));
         w2 = driver.findElement(By.xpath("//div[contains(@id,'box-product')]//s[contains(@class,'regular-price')]"));
         w3 = driver.findElement(By.xpath("//div[contains(@id,'box-product')]//strong[contains(@class,'campaign-price')]"));

@@ -38,7 +38,7 @@ public class EleventhTest extends BaseTest  {
         String password = "password";
 
 
-        driver.navigate().to( "http://localhost/litecart" );
+        driver.get("http://localhost/litecart/en/");
 
         WebElement w1 = driver.findElement( By.xpath( ".//a[text() = 'Create Account']" ) );
         w1.click();
