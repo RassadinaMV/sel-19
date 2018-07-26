@@ -6,58 +6,103 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import static org.openqa.selenium.By.cssSelector;
-import static org.openqa.selenium.By.tagName;
-import static org.openqa.selenium.support.ui.ExpectedConditions.stalenessOf;
-import static org.openqa.selenium.support.ui.ExpectedConditions.textToBe;
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+
+
 
 public class ThirteenthTest extends BaseTest {
 
 
     @Test
-    public void workWithTheBasket() {
-        driver.navigate().to("http://localhost/litecart/");
-
-        for (int i = 0; i <= 2; i++) {
-            driver.findElements(By.className("product")).get(i).click();
-            if (isElementPresent(driver, tagName("select"))) {
-                Select select = new Select(driver.findElement(tagName("select")));
-                select.selectByIndex(1);
-            }
-            driver.findElement(cssSelector("[name='add_cart_product']")).click();
-            wait.until(textToBe(cssSelector("span.quantity"), String.valueOf(i)));
-            try {
-                Thread.sleep(20000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            driver.navigate().to("http://localhost/litecart/");
+    public void addItem() {
+        BaseTest.loginToAdm();
+        String desc="описание";
+        String name="name999";
+        driver.findElement(By.xpath("//span[text() = 'Catalog']")).click();
+        driver.findElement(By.xpath("//a[. = ' Add New Product']")).click();
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
+
+
+        driver.findElement(By.xpath("//input[@name = 'name[en]']")).sendKeys(name);
+        driver.findElement(By.xpath("//input[@name = 'code']")).sendKeys("456789");
+        driver.findElements(By.xpath("//input[@name = 'categories[]']")).get(1).click();
+        driver.findElements(By.xpath("//input[@name = 'product_groups[]']")).get(1).click();
+        driver.findElement(By.xpath("//input[@name = 'quantity']")).sendKeys("10");
+
+        LocalDate ss= LocalDate.now();
+        String ss1="10";
+        String ss2="20";
+        int yy=ss.getYear();
+        int mm=ss.getMonthValue();
+        if (mm<10){
+            ss1=ss1+".0"+Integer.toString(mm)+"."+Integer.toString(yy);
+            ss2=ss2+".0"+Integer.toString(mm)+"."+Integer.toString(yy);
+        }
+
+        if (mm>=10){
+            ss1=ss1+"."+mm+"."+yy;
+            ss2=ss2+"."+mm+"."+yy;
+        }
+
+        driver.findElement(By.xpath("//input[@name = 'date_valid_from']")).sendKeys(ss1);
+        driver.findElement(By.xpath("//input[@name = 'date_valid_to']")).sendKeys(ss2);
+        try {
+            Thread.sleep(20000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        File fl = new File("src/test/java/mess/smile.jpg");
+        driver.findElement(By.name("new_images[]")).sendKeys(fl.getAbsolutePath());
 
         try {
             Thread.sleep(20000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        driver.findElement(By.cssSelector("a.link[href='http://localhost/litecart/en/checkout']")).click();
 
+        driver.findElement(By.xpath("//a[text() = 'Information']")).click();
 
+        try {
+            Thread.sleep(20000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Select sl=new Select(driver.findElement(By.xpath("//select[@name ='manufacturer_id']")));
+        sl.selectByIndex(1);
+        driver.findElement(By.xpath("//input[@name = 'keywords']")).sendKeys(ss2);
+        driver.findElement(By.xpath("//input[@name = 'short_description[en]']")).sendKeys(desc);
 
-        Integer row = driver.findElements(By.cssSelector("td.item")).size();
-        for (int i = 1; i <= row; i++) {
-            WebElement removeButton = driver.findElement(By.cssSelector("[name='remove_cart_item']"));
-            removeButton.click();
-            try {
-                Thread.sleep(40000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
 
-        Assert.assertTrue(isElementPresent(driver, tagName("em")));
+        driver.findElement(By.xpath("//a[text() = 'Prices']")).click();
+        driver.findElement(By.xpath("//input[@name = 'purchase_price']")).sendKeys("88");
+
+        Select sl1=new Select(driver.findElement(By.xpath("//select[@name ='purchase_price_currency_code']")));
+        sl1.selectByIndex(1);
+
+        driver.findElement(By.xpath("//input[@name = 'gross_prices[USD]']")).sendKeys("88");
+        driver.findElement(By.xpath("//input[@name = 'gross_prices[EUR]']")).sendKeys("88");
+        driver.findElement(By.xpath("//button[@name = 'save']")).click();
+
+        try {
+            Thread.sleep(20000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        driver.findElement(By.linkText(name));
+
 
     }
-
 }
