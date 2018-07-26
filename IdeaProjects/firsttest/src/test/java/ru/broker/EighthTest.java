@@ -15,7 +15,7 @@ public class EighthTest  extends BaseTest {
     public void controlDuckStickers() {
 
         driver.get("http://localhost/litecart/en/");
-        List<WebElement> elmts= driver.findElements(By.xpath("//div[contains(@class,'name')]"));
+        List<WebElement> elmts= driver.findElements(By.xpath("//*[contains(@class,'product')]//div[contains(@class,'name')]"));
         int hh=elmts.size();
         String[] stckrs=new String[hh];
         //System.out.println(hh);
