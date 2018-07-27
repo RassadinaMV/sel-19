@@ -16,49 +16,24 @@ public class TwelfthTest extends BaseTest {
 
     @Test
     public void Basket() {
-        driver.get("http://localhost/litecart/en/");
 
-       // for (int i = 1; i <= 2; i++) {
-            //через product поиск не отрабатывает в различных вариантах, потому используется 'box-campaigns'
-            driver.findElement(By.xpath("//div[contains(@id,'box-most-popular')]//a")).click();
-            //driver.findElement(By.className("product")).click();
-            //driver.findElement(By.xpath("//*[contains(@class,'product')]//a")).click();
-            //driver.findElement(By.xpath("//div[contains(@class,'content')]//a")).click();
-           // driver.findElement(By.xpath("//div[contains(@id,'box-campaigns')]//a")).click();
-        try {
-            Thread.sleep(20000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+         for (int i=0;i<3;i++) {
+             driver.get("http://localhost/litecart/en/");
+             driver.findElements(By.xpath("//*[contains(@class,'product')]")).get(i).click();
+             if (isElementPresent(driver, tagName("select"))) {
+                 Select select = new Select(driver.findElement(tagName("select")));
+                 select.selectByIndex(1);
+             }
+             driver.findElement(By.xpath("//button[contains(@name,'add_cart_product')]")).click();
+             wait.until(textToBe((By.xpath("/a/span[contains(@class,'quantity')]")), String.valueOf(i)));
+             try {
+                 Thread.sleep(10000);
+             } catch (InterruptedException e) {
+                 e.printStackTrace();
+             }
+         }
 
-            driver.findElement(cssSelector("[name='add_cart_product']")).click();
-            try {
-            Thread.sleep(20000);
-            } catch (InterruptedException e) {
-            e.printStackTrace();
-            }
-
-
-            driver.navigate().back();
-
-        driver.findElement(By.xpath("//div[contains(@id,'box-campaigns')]//a")).click();
-
-
-        if (isElementPresent(driver, tagName("select"))) {
-            Select select = new Select(driver.findElement(tagName("select")));
-            select.selectByIndex(1);
-        }
-        driver.findElement(cssSelector("[name='add_cart_product']")).click();
-        try {
-            Thread.sleep(20000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-
-        driver.navigate().back();
-
-        driver.findElement(By.xpath("//div[contains(@id,'cart')]//a")).click();
+        driver.findElement(By.xpath("//a[contains(text(),'Checkout')]//a")).click();
        try {
              Thread.sleep(20000);
              } catch (InterruptedException e) {
@@ -66,16 +41,15 @@ public class TwelfthTest extends BaseTest {
              }
 
 
-        Integer row =driver.findElements(By.xpath("//li[contains(@class,'item')]")).size();
-        for (int i = 1; i <= row; i++) {
-            WebElement removeButton = driver.findElement(cssSelector("[name='remove_cart_item']"));
-            removeButton.click();
-            //wait.until(stalenessOf(removeButton));
-        }
-        try {
-            Thread.sleep(40000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        int h =driver.findElements(By.xpath("//input[contains(@name,'quantity')]")).size();
+
+
+        for (int i=0;i<h;i++){
+            WebElement b=driver.findElement(By.xpath("//button[contains(@name,'remove_cart_item')]"));
+            b.click();
+            wait.until(stalenessOf(b));
+            
+
         }
 
         org.junit.Assert.assertTrue(isElementPresent(driver, tagName("em")));
